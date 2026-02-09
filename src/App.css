@@ -1,0 +1,8 @@
+.navbar{
+  display: flex;
+  text-decoration: none;
+}
+ul li {
+  display: flex;
+  text-decoration: none;
+}
