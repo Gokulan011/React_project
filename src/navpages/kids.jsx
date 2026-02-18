@@ -2,7 +2,6 @@ import { useState } from "react";
 import Product from "../data/Product";
 import Productcard from "../components/Productcard";
 import PageSearch from "../components/PageSearch";
-import kidsbg from "../assets/kids_bg.png"
 
 export default function Kids() {
 
@@ -12,7 +11,7 @@ export default function Kids() {
   return (
     <div className="page">
 
-      <img src={kidsbg} className="Kids-banner" />
+      {/* <img src={kidsbg} className="Kids-banner" /> */}
 
       <PageSearch products={kidsProducts} setFiltered={setFiltered} />
 
