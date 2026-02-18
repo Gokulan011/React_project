@@ -11,7 +11,7 @@ export default function Kids() {
   return (
     <div className="page">
 
-      {/* <img src={kidsbg} className="Kids-banner" /> */}
+      <img src="src\assets\Kids_bg.png" className="Kids-banner" />
 
       <PageSearch products={kidsProducts} setFiltered={setFiltered} />
 
