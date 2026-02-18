@@ -1,0 +1,41 @@
+  /* Home pahe products */
+.grid{
+  background-color: #FAF9F6;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,2fr));
+  gap:20px;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* remove scroll on auth pages */
+.auth-page{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:white;
+  overflow:hidden;
+}
+
+.auth-box{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  width:260px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+  
+
+@media (max-width:600px){
+.grid{
+  background-color: #FAF9F6;
+  display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+  padding: 20px;
+  margin-top: 60px;
+}
+}

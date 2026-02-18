@@ -1,0 +1,12 @@
+.Kids-banner{
+     width:1420px;
+    height:550px;
+    margin: 0px 0px 0px 50px ;
+}
+@media (max-width: 600px){
+ .Kids-banner{
+    width:510px;
+    height:300px;
+    margin: 0px 0px 0px 10px ;
+} 
+}

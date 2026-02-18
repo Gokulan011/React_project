@@ -1,0 +1,10 @@
+.home-hd-bg{
+    width:1521px;
+     height:100px;
+     position:absolute
+}
+@media (max-width: 600px) {
+  .home-hd-bg{
+    width:517px;
+  }  
+}

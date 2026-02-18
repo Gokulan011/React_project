@@ -1,0 +1,41 @@
+.page-search{
+  margin: 20px 0;
+  display:flex;
+  justify-content:center;
+}
+.page-search{
+  position: relative;
+  width: 350px;
+  margin: 20px auto;
+}
+
+/* input */
+.page-search input{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* suggestion dropdown */
+.suggest-box{
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  z-index: 50;
+}
+
+/* each item */
+.suggest-item{
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.suggest-item:hover{
+  background: #f5f5f5;
+}
