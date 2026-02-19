@@ -87,23 +87,35 @@ ul li {
   margin: 0px 0px 0px 0px;
 }
 
-@media (max-width: 1000px) {
-  .nav1 {
-    display: flex;
-    margin: 0px 0px 0px 20px;
-  }
-
-  .nav-li {
-    margin: 0px 0px 0px 10px;
-  }
+/* chatgpt */
+.device-switch {
+  display: flex;
+  gap: 12px;
+  margin-left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
 }
 
-@media (max-width: 600px) {
+.device-switch svg {
+  opacity: 0.5;
+  transition: 0.25s;
+}
+
+.device-switch svg:hover {
+  transform: scale(1.15);
+}
+
+.device-switch svg.active {
+  opacity: 1;
+  color: #0d6efd;
+}
+/* @media (max-width: 480px) {
   .logo {
     align-items: center;
-    font-size: 15px;
+    font-size: 10px;
     position: relative;
-    margin: 0px 0px 0px -76px;
+    margin: 0px 0px 0px 0px; 
   }
 
   .brand-name {
@@ -149,4 +161,60 @@ ul li {
     color: rgb(0, 0, 0);
     margin: 0px 0px 0px -30px;
   }
+} */
+
+/* ================= MOBILE (phones) ================= */
+@media (max-width: 480px) {
+
+.logo {
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    margin: 0px 0px 0px -76px; 
+  }
+
+  .brand-name {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin: 0px 0px 0px -75px;
+  }
+
+  .Name_banner {
+    font-family: Lora;
+    position: relative;
+    margin: 20px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 15px;
+  }
+
+  .nav1 {
+    display: flex;
+    justify-content: left;
+    margin-top: -23px;
+    margin-left: -32px;
+  }
+
+  #nav-li {
+    margin-left: 15px;
+    font-size: 10px;
+  }
+
+  .nav2 {
+    display: flex;
+    margin: -19px 0px 0px 230px;
+    font-size: 10px;
+  }
+
+  .nav-li2 {
+    margin: 0px 0px 0px 20px;
+    font-size: 10px;
+  }
+
+  .nav-line {
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 0px;
+  }
+
 }

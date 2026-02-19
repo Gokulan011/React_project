@@ -11,6 +11,7 @@ import './cssfiles/Women.css'
 import './cssfiles/Kids.css'
 import './cssfiles/Login.css'
 import './cssfiles/Searchpage.css'
+import './cssfiles/preview.css'
 import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,12 +20,14 @@ import Register from './navpages/Register'
 import Women from './navpages/Women'
 import Kids from './navpages/kids'
 import Men from './navpages/Men'
+import PreviewWrapper from './components/PreviewWrapper'
 
 
 function App() {
 
   return (
     <>
+    <PreviewWrapper>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -36,6 +39,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
+      </PreviewWrapper>
     </>
   )
 }
