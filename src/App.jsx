@@ -21,6 +21,7 @@ import Women from './navpages/Women'
 import Kids from './navpages/kids'
 import Men from './navpages/Men'
 import PreviewWrapper from './components/PreviewWrapper'
+import Allproducts from './pages/Allproducts'
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/allproducts' element={<Allproducts />} />
         <Route path='/men' element={<Men/>}/>
         <Route path='/women' element={<Women/>}/>
         <Route path='/kids' element={<Kids/>}/>

@@ -59,6 +59,7 @@ ul li {
   font-size: larger;
   text-decoration: none;
   margin: 5px 0px 0px 60px;
+  font-weight: 150;
 
 }
 
@@ -72,6 +73,7 @@ ul li {
   border: none;
   outline: none;
   background-color: white;
+  font-weight: 150;
 }
 
 #nav-li:hover {
@@ -110,12 +112,12 @@ ul li {
   opacity: 1;
   color: #0d6efd;
 }
-/* @media (max-width: 480px) {
+/* @media (max-width: 600px) {
   .logo {
     align-items: center;
-    font-size: 10px;
+    font-size: 20px;
     position: relative;
-    margin: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px -78px; 
   }
 
   .brand-name {
@@ -143,27 +145,29 @@ ul li {
 
   #nav-li {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: 300;
   }
 
   .nav2 {
     display: flex;
-    margin: -26px 0px 0px 270px;
+    margin: -20px 0px 0px 250px;
     font-size: 15px;
   }
 
   .nav-li2 {
-    margin: 0px 0px 0px 10px;
-    font-size: 15px;
+    margin: 6px 0px 0px 30px;
+    font-size: 10px;
+    font-weight: 300;
   }
 
   .nav-line {
     color: rgb(0, 0, 0);
-    margin: 0px 0px 0px -30px;
+    margin: -2px 0px 0px -30px;
   }
 } */
 
-/* ================= MOBILE (phones) ================= */
+/* ================= MOBILE  ================= */
 @media (max-width: 480px) {
 
 .logo {
