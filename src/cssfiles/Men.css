@@ -10,3 +10,10 @@
     margin: 0px 0px 0px 10px ;
 } 
 }
+@media (max-width: 480px){
+ .mens-banner{
+    width:460px;
+    height:280px;
+    margin: 0px 0px 0px 10px ;
+} 
+}
