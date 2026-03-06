@@ -1,0 +1,85 @@
+/* Contact */
+.contact-img {
+  height: 700px;
+  width: 50%;
+}
+
+.contact-form {
+  margin-left: 57%;
+}
+
+.contact-h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 65px;
+  margin-top: -660px;
+  margin-left: 57%;
+}
+
+.contact-p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 57%;
+}
+
+.fname-label {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 40px;
+}
+
+.fname-input {
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+   font-family: "Cormorant Garamond", serif;
+}
+
+.lname-label {
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 203px;
+}
+
+.lname-input {
+  width: 250px;
+  height: 40px;
+  margin-left: 30px;
+   font-family: "Cormorant Garamond", serif;
+}
+
+.email-label {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 20px;
+}
+
+.email-input {
+  width: 528px;
+  height: 40px;
+  margin-top: 10px;
+   font-family: "Cormorant Garamond", serif;
+}
+
+.ans-label {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 20px;
+}
+
+.ans-input {
+  width: 528px;
+  height: 50px;
+  margin-top: 10px;
+   font-family: "Cormorant Garamond", serif;
+}
+
+.cont-sub-btn {
+  margin-top: 20px;
+  padding: 10px 240px;
+  border: solid black 1px;
+  font-family: "Cormorant Garamond", serif;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.cont-sub-btn:hover {
+  background-color: black;
+  color: white;
+}

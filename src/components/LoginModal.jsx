@@ -3,35 +3,39 @@ import { AuthContext } from "../context/AuthContext";
 
 export default function LoginModal({ close }) {
 
-  const { login } = useContext(AuthContext);
+  const { login, register } = useContext(AuthContext);
+
+  const [isRegister, setIsRegister] = useState(false);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  // Disable scroll when modal open
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => document.body.style.overflow = "auto";
+    return () => (document.body.style.overflow = "auto");
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (!username || !password) {
-      alert("Please fill all fields");
-      return;
+  if (isRegister) {
+    register(username, password);
+    setIsRegister(false);
+  } else {
+    const success = login(username, password);
+
+    if (success) {
+      alert("Login successful");
+      close();
     }
-
-    login(username, password);
-    alert("Login Successful !");
-    close();
-  };
-
+  }
+};
 
   return (
     <div className="modal-overlay">
       <div className="login-box">
-        <h2>Login</h2>
+
+        <h2>{isRegister ? "Register" : "Login"}</h2>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -51,10 +55,27 @@ export default function LoginModal({ close }) {
           />
 
           <div className="btns">
-            <button type="submit" className="login-btn">Login</button>
-            <button type="button" onClick={close} className="cancel-btn">Cancel</button>
+            <button type="submit">
+              {isRegister ? "Register" : "Login"}
+            </button>
+
+            <button type="button" onClick={close}>
+              Cancel
+            </button>
           </div>
         </form>
+
+        <p style={{ marginTop: "10px" }}>
+          {isRegister ? "Already have an account?" : "Don't have an account?"}
+
+          <span
+            style={{ color: "blue", cursor: "pointer", marginLeft: "5px" }}
+            onClick={() => setIsRegister(!isRegister)}
+          >
+            {isRegister ? "Login" : "Register"}
+          </span>
+        </p>
+
       </div>
     </div>
   );

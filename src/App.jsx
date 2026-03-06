@@ -12,6 +12,9 @@ import './cssfiles/Kids.css'
 import './cssfiles/Login.css'
 import './cssfiles/Searchpage.css'
 import './cssfiles/preview.css'
+import './cssfiles/Product.css'
+import './cssfiles/Footer.css'
+import './cssfiles/Contactus.css'
 import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,14 +25,18 @@ import Kids from './navpages/kids'
 import Men from './navpages/Men'
 import PreviewWrapper from './components/PreviewWrapper'
 import Allproducts from './pages/Allproducts'
+import ScrollToTop from './components/ScrollToTop'
+import Footer from './components/Footer'
+import  ContactUs  from './pages/ContactUs'
 
 
 function App() {
 
   return (
     <>
-    <PreviewWrapper>
+     <PreviewWrapper>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/allproducts' element={<Allproducts />} />
@@ -40,7 +47,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
-      </PreviewWrapper>
+      <Footer/>
+      </PreviewWrapper> 
     </>
   )
 }
