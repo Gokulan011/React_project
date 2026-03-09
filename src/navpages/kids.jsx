@@ -3,6 +3,7 @@ import Product from "../data/Product";
 import Productcard from "../components/Productcard";
 import PageSearch from "../components/PageSearch";
 import Kidsbanner from "../assets/Kids_banner.png"
+import Footer from '../components/Footer'
 
 export default function Kids() {
 
@@ -21,7 +22,7 @@ export default function Kids() {
           <Productcard key={p.id} product={p} />
         ))}
       </div>
-
+      <Footer/>
     </div>
   );
 }

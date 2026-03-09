@@ -55,11 +55,11 @@ export default function LoginModal({ close }) {
           />
 
           <div className="btns">
-            <button type="submit">
+            <button type="submit" className="login-btn">
               {isRegister ? "Register" : "Login"}
             </button>
 
-            <button type="button" onClick={close}>
+            <button type="button" onClick={close} className="cancel-btn">
               Cancel
             </button>
           </div>

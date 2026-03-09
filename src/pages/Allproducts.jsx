@@ -2,6 +2,7 @@ import React from 'react'
 import product from "../data/Product";
 import Gk_bg_blue_blr from "../assets/Gk_bg_brown_blr.png"
 import Productcard from '../components/Productcard';
+import Footer from '../components/Footer'
 export default function Allproducts() {
   return (
      <>
@@ -14,6 +15,7 @@ export default function Allproducts() {
               <Productcard key={p.id} product={p} />
             ))}
           </div>
-        </div></>
+        </div>
+        <Footer/></>
   )
 }

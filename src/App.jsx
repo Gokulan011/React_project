@@ -26,8 +26,7 @@ import Men from './navpages/Men'
 import PreviewWrapper from './components/PreviewWrapper'
 import Allproducts from './pages/Allproducts'
 import ScrollToTop from './components/ScrollToTop'
-import Footer from './components/Footer'
-import  ContactUs  from './pages/ContactUs'
+
 
 
 function App() {
@@ -47,7 +46,6 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
-      <Footer/>
       </PreviewWrapper> 
     </>
   )

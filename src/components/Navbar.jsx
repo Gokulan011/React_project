@@ -59,7 +59,7 @@ export default function Navbar() {
                   <div className="logout-dropdown">
                     <button className="logout-btn" onClick={logout}>Logout</button>
 
-                    <button className="delete-btn" onClick={deleteAccount} style={{ color: "red", marginTop: "5px" }}>
+                    <button className="logout-btn" onClick={deleteAccount} style={{ color: "white", marginTop: "5px" }}>
                       Delete Account
                     </button>
                   </div>

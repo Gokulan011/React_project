@@ -3,6 +3,7 @@ import Product from "../data/Product";
 import Productcard from "../components/Productcard";
 import PageSearch from "../components/PageSearch";
 import Womenbg from "../assets/Womens_banner.png"
+import Footer from '../components/Footer'
 
 function Women() {
    const womenProducts = Product.filter(p => p.category === "women");
@@ -18,6 +19,7 @@ function Women() {
           <Productcard key={p.id} product={p} />
         ))}
       </div>
+      <Footer/>
     </>
   );
 }

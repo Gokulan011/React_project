@@ -3,6 +3,7 @@ import Product from "../data/Product";
 import Productcard from "../components/Productcard";
 import PageSearch from "../components/PageSearch";
 import { useState } from "react";
+import Footer from '../components/Footer'
 
 function Men() {
      const menProducts = Product.filter(p => p.category === "men");
@@ -18,6 +19,7 @@ function Men() {
           <Productcard key={p.id} product={p} />
         ))}
       </div>
+      <Footer/>
      </>
   );
 }

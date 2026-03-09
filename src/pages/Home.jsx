@@ -8,7 +8,7 @@ import lookbookgirl from '../assets/image/look-book-girlpic3.avif'
 import lookbookkids from '../assets/image/look_book_kidspic.avif'
 import {  useNavigate } from 'react-router-dom'
 import ContactUs from './ContactUs'
-
+import Footer from '../components/Footer'
 
 
 export default function Home() {
@@ -55,6 +55,7 @@ export default function Home() {
     <div className='contact-pg'>
      <ContactUs/>
     </div> 
+    <Footer/>
     </>
   )
 }

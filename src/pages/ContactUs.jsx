@@ -19,6 +19,7 @@ export default function ContactUs() {
         (result) => {
           console.log("SUCCESS!", result.text);
           alert("Message Sent Successfully!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -38,26 +39,14 @@ export default function ContactUs() {
       <form ref={form} onSubmit={sendEmail} className='contact-form'>
         <label htmlFor="" className='fname-label'>First name *</label>
         <label htmlFor="" className='lname-label'>Last name *</label> <br />
-        <input type="text" name="user_fname" placeholder="Your First Name" required className='fname-input' />
-        <input type="text" name="user_lname" placeholder="Your Last Name" required className='lname-input' /> <br />
+        <input type="text" name="user_firstname" placeholder="Your First Name" required className='fname-input' />
+        <input type="text" name="user_lastname" placeholder="Your Last Name" required className='lname-input' /> <br />
         <label htmlFor="" className='email-label'>Email *</label> <br />
         <input type="email" name="user_email" placeholder="Your Email" required className='email-input' /> <br />
         <label htmlFor="" className='ans-label'>Short answer *</label> <br />
         <textarea name="message" placeholder="Your Message" required className='ans-input' />
-        <button onClick={sendEmail} className='cont-sub-btn'>Submit</button>
+        <button type="submit" className='cont-sub-btn'>Submit</button>
       </form>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
