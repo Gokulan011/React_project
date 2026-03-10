@@ -34,7 +34,7 @@ function App() {
   return (
     <>
      <PreviewWrapper>
-      <Navbar />
+      <Navbar/>
       <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home />} />

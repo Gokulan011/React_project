@@ -237,8 +237,217 @@
   margin: 60px 0px 0px 50px;
 }
 
-/* ontact page */
-/*  */
+/* Contact page */
+
 .contact-pg{
   margin-bottom: 113px;
+}
+@media (max-width: 360px){
+.dress-bg {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.offer-desc {
+  margin: -150px 0px 0px 0px;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 0px;
+  font-weight: 600;
+  animation: fadein 3s;
+}
+
+.offer-desc2 {
+  margin: 0px 0px 0px 0px;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 25px;
+  animation: fadein 3s;
+}
+
+.offer-desc3 {
+  margin: 0px 0px 0px 0px;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  animation: fadein 3s;
+}
+
+.shopnow-btn {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  padding: 2px 5px;
+  background-color: transparent;
+  border: solid white 1px;
+  color: white;
+  margin: -50px 0px 0px 150px;
+  transition: 0.5s;
+  animation: fadein 3s;
+}
+
+.men-bg-clr {
+  width: 100%;
+  height: 190px;
+  background-color: rgb(223, 235, 240);
+  margin-top: 30px;
+
+}
+
+.men-home-desc {
+  position: relative;
+  font-size: 15px;
+  margin: -130px 0px 0px 210px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.men-home-desc2 {
+  font-size: 10px;
+  margin: 0px 0px 0px 220px;
+  word-spacing: -3px;
+}
+
+.men-page-btn {
+  font-size: 5px;
+  margin: -20px 0px 0px 250px;
+  border: solid black 1px;
+  padding: 2px 5px;
+  background-color: transparent;
+  color: black;
+}
+.men-link-div {
+  width: 100%;
+  height: 190px;
+  background-color: rgb(209, 242, 255);
+  margin-left: 0px;
+  position: absolute;
+}
+
+.men-link-pic {
+  position: relative;
+  width: 180px;
+  height: 190px;
+
+}
+
+.women-bg-clr {
+   width: 100%;
+  height: 190px;
+  background-color: rgb(255, 233, 236);
+}
+
+.women-link-dev {
+  width: 100%;
+  height: 190px;
+  background-color: rgb(245, 218, 227);
+  margin-left: 0px;
+}
+
+.women-link-pic {
+  margin-left: 180Px;
+  position: relative;
+  width: 180px;
+  height: 190px;
+}
+
+.women-home-desc {
+  position: relative;
+  font-size: 15px;
+  margin: -140px 0px 0px 25px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.women-home-desc2 {
+  font-size: 10px;
+  margin: 0px 0px 0px 45px;
+  word-spacing: -3px;
+}
+
+.women-page-btn {
+  font-size: 5px;
+  margin: -20px 0px 0px 70px;
+  border: solid black 1px;
+  padding: 2px 5px;
+  background-color: transparent;
+  color: black;
+}
+.kids-bg-clr {
+  width: 100%;
+  height: 190px;
+  background-color: rgb(220, 239, 220);
+}
+
+.kids-link-div {
+  width: 100%;
+  height: 190px;
+  background-color: rgb(194, 254, 203);
+  margin-left: 0px;
+}
+
+.kids-link-pic {
+  position: relative;
+  width: 180px;
+  height: 190px;
+}
+
+.kids-home-desc {
+  position: relative;
+  font-size: 15px;
+  margin: -130px 0px 0px 220px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.kids-home-desc2 {
+  font-size: 10px;
+  margin: 0px 0px 0px 245px;
+  word-spacing: -3px;
+}
+
+.kids-page-btn {
+  font-size: 5px;
+  margin: -20px 0px 0px 260px;
+  border: solid black 1px;
+  padding: 2px 5px;
+  background-color: transparent;
+  color: black;
+}
+
+/* shop- name */
+.gk-h1 {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* look-book */
+.look-book-bg {
+  width: 100%;
+  height: 140px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.look-book-pic1 {
+  width:30%;
+  height: 100px;
+  margin: 20px 0px 0px 10px;
+}
+
+.look-book-pic2 {
+  width:30%;
+  height: 100px;
+  margin: 20px 0px 0px 8px;
+}
+
+.look-book-pic3 {
+  width:30%;
+  height: 100px;
+  margin: 20px 0px 0px 8px;
+}
+
 }
