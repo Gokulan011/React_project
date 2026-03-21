@@ -84,7 +84,7 @@
   color: white;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 480px){
  .contact{
  margin-bottom: -104px;
   }
