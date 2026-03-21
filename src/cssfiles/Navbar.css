@@ -252,22 +252,22 @@ ul li {
     display: flex;
     justify-content: left;
     margin-top: -25px;
-    margin-left: -10px;
+    margin-left: -20px;
   }
 
   #nav-li {
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 10px;
   }
 
   .nav2 {
     display: flex;
-    margin: -19px 0px 0px 250px;
+    margin: -19px 0px 0px 220px;
     font-size: 10px;
   }
 
   .nav-li2 {
-    margin: 3px 0px 0px 20px;
+    margin: 3px 0px 0px 10px;
     font-size: 8px;
   }
 
