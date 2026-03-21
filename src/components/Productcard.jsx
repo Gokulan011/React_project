@@ -8,7 +8,7 @@ export default function Productcard({ product }) {
         <img src={product.img} alt={product.name} />
         <h3 className="Pro-name">{product.name}</h3>
 
-        <StarRating rating={product.rating} />
+        <StarRating  rating={product.rating} />
 
         <p className="price">₹{product.price}</p>
       </div>

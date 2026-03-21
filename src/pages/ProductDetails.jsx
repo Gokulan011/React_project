@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Product from "../data/Product";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import StarRating from "../components/StarRating";
 
 export default function ProductDetails() {
 
@@ -24,7 +25,7 @@ export default function ProductDetails() {
       {/* INFO */}
       <div className="info-section">
         <h1 className="title">{product.name}</h1>
-        <p className="rating">⭐⭐⭐⭐☆</p>
+        <p className="rating"><StarRating  rating={product.rating} /></p>
         <p className="price">₹{product.price}</p>
         <p className="desc">{product.desc}</p>
       </div>
