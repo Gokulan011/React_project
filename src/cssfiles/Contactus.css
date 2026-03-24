@@ -92,38 +92,39 @@
   height: 250px;
   width: 50%;
   margin-bottom: -100px;
+  visibility: hidden;
 }
 
 .contact-form {
-  margin-left: 57%;
+  margin-left: 15%;
   margin-top: 0px;
 }
 
 .contact-h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 10px;
+  font-size: 25px;
   margin-top: -140px;
-  margin-left: 57%;
+  margin-left:39%;
 }
 
 .contact-p {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
-  font-size: 7px;
-  margin-left: 57%;
+  font-size: 15px;
+  margin-left: 25%;
   margin-top: -5px;
 }
 
 .fname-label {
   font-family: "Cormorant Garamond", serif;
   margin-top: 0px;
-  font-size: 7px;
+  font-size: 20px;
 }
 
 .fname-input {
-  font-size: 5px;
-  width: 65px;
-  height: 15px;
+  font-size: 15px;
+  width:150px;
+  height: 25px;
   margin-top: 0px;
   border: solid black 1px;
   border-radius: 2px;
@@ -132,15 +133,15 @@
 
 .lname-label {
   font-family: "Cormorant Garamond", serif;
-  margin-left: 50px;
-  font-size: 7px;
+  margin-left: 80px;
+  font-size: 20px;
 }
 
 .lname-input {
-  font-size: 5px;
-  width: 65px;
-  height: 15px;
-  margin-left: 17px;
+  font-size: 15px;
+  width: 150px;
+  height: 25px;
+  margin-left: 25px;
   border: solid black 1px;
   border-radius: 2px;
   font-family: "Cormorant Garamond", serif;
@@ -148,14 +149,14 @@
 
 .email-label {
   font-family: "Cormorant Garamond", serif;
-  margin-top:  0px;
-  font-size: 7px;
+  margin-top:  10px;
+  font-size: 20px;
 }
 
 .email-input {
-  font-size: 5px;
-  width: 148px;
-  height: 15px;
+  font-size: 15px;
+  width: 325px;
+  height: 25px;
   margin-top: 0px;
   border: solid black 1px;
   border-radius: 2px;
@@ -164,14 +165,14 @@
 
 .ans-label {
   font-family: "Cormorant Garamond", serif;
-  margin-top: 0px;
-  font-size: 7px;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 .ans-input {
-  font-size: 5px;
-  width: 148px;
-  height: 20px;
+  font-size: 15px;
+  width: 325px;
+  height: 45px;
   margin-top: 0px;
   border: solid black 1px;
   border-radius: 2px;
@@ -179,9 +180,9 @@
 }
 
 .cont-sub-btn {
-  font-size: 7px;
+  font-size: 20px;
   margin-top: 10px;
-  padding: 5px 63px;
+  padding: 5px 133px;
   border: solid black 1px;
   font-family: "Cormorant Garamond", serif;
   color: white;
