@@ -1,23 +1,179 @@
-.home-hd-bg{
-    width:1521px;
-     height:100px;
-     position:absolute
+.home-hd-bg {
+  width: 1521px;
+  height: 100px;
+  position: absolute
 }
+
+/* product link */
+.product-link {
+  text-decoration: none;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(218, 73, 73);
+}
+
+/* RELATED PRODUCTS ROW */
+.related-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  /* no wrapping */
+  gap: 15px;
+  overflow-x: auto;
+  /* horizontal scroll */
+  overflow-y: hidden;
+  /* hide vertical scroll */
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+/* SMALL CARD */
+.small-card {
+  width: 160px;
+  /* fixed width */
+  min-width: 160px;
+  flex-shrink: 0;
+  /* prevents shrinking */
+}
+
+.small-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small-card .Pro-name {
+  font-size: 14px;
+}
+
+.small-card .price {
+  font-size: 14px;
+}
+
+/* OPTIONAL: hide scrollbar in Chrome/Safari */
+.related-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.related-grid::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Ratings */
+.stars {
+  margin: 6px 0;
+}
+
+.star {
+  color: rgb(212, 212, 212);
+  font-size: 18px;
+}
+
+.star.filled {
+  color: gold;
+}
+
 /* @media (max-width: 600px) {
   .home-hd-bg{
     width:517px;
   }  
 } */
-@media (max-width: 480px){
-  .home-hd-bg{
-    width:100%;
+@media (max-width: 480px) {
+  .home-hd-bg {
+    width: 100%;
     height: 15%px;
-  }  
+  }
+
   .Pro-name {
     margin-top: 10px;
     font-size: 15px;
   }
-  .price{
+
+  .pro-star {
+    color: rgb(212, 212, 212);
+    font-size: 8px;
+    margin-top: -15px;
+  }
+
+  .price {
     font-size: 15px;
+  }
+
+  .product-link {
+    height: 250px;
+  }
+
+  .card {
+    padding: 5px;
+    border-radius: 12px;
+    background: white;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .card img {
+    width: 80%;
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .related-section{
+    margin-top: -90px;
+  }
+  .related-section h2{
+    font-family: "Cormorant Garamond", serif;
+  }
+  .related-grid {
+    display: grid;
+    /* use grid for rows/columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
+    gap: 10px;
+    /* spacing between cards */
+    overflow: visible;
+    /* no horizontal scroll */
+    padding: 10px 0;
+  }
+
+  .small-card {
+    width: 100%;
+    /* full width inside grid column */
+    min-width: unset;
+  }
+
+  .small-card img {
+    height: 150px;
+    /* adjust image height */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .small-card .Pro-name,
+  .small-card .price {
+    font-size: 14px;
   }
 }
