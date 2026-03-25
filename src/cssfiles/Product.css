@@ -1,9 +1,11 @@
 .home-hd-bg {
-  width: 1521px;
+  width:100%;
   height: 100px;
   position: absolute
 }
-
+.Name_banner{
+  padding: 20px;
+}
 /* product link */
 .product-link {
   text-decoration: none;
