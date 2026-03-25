@@ -38,12 +38,14 @@
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   padding: 5px 20px;
-  background-color: transparent;
+  background-color: white;
   border: solid white 1px;
-  color: white;
+  border-radius: 30px;
+  color: black;
   margin: 50px 0px 0px 700px;
   transition: 0.5s;
   animation: fadein 3s;
+  font-weight: 700;
 }
 
 .shopnow-btn:hover {
@@ -76,10 +78,11 @@
 .men-page-btn {
   font-size: 20px;
   font-weight: 200;
-  margin: 20px 0px 0px 700px;
-  border: solid black 1px;
+  margin: 20px 0px 0px 690px;
+  border: solid white 1px;
+  border-radius: 30px;
   padding: 5px 10px;
-  background-color: transparent;
+  background-color: white;
   color: black;
   transition: 0.5s;
 }
@@ -87,6 +90,7 @@
 .men-page-btn:hover {
   font-family: 200;
   color: white;
+  border: solid 1px black;
   background-color: black;
 }
 
@@ -141,10 +145,11 @@
 .women-page-btn {
   font-size: 20px;
   font-weight: 200;
-  margin: 20px 0px 0px 190px;
-  border: solid black 1px;
+  margin: 20px 0px 0px 175px;
+  border: solid white 1px;
+  border-radius: 30px;
   padding: 5px 10px;
-  background-color: transparent;
+  background-color: white;
   color: black;
   transition: 0.5s;
 }
@@ -152,6 +157,7 @@
 .women-page-btn:hover {
   font-family: 200;
   color: white;
+  border: solid 1px black;
   background-color: black;
 }
 
@@ -191,9 +197,10 @@
   font-size: 20px;
   font-weight: 200;
   margin: 20px 0px 0px 700px;
-  border: solid black 1px;
+  border: solid white 1px;
+  border-radius: 30px;
   padding: 5px 10px;
-  background-color: transparent;
+  background-color: white;
   color: black;
   transition: 0.5s;
 }
@@ -201,6 +208,7 @@
 .kids-page-btn:hover {
   font-family: 200;
   color: white;
+  border: solid 1px black;
   background-color: black;
 }
 
@@ -492,9 +500,9 @@ shop- name
   font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   padding: 2px 5px;
-  background-color: transparent;
+  background-color: white;
   border: solid white 1px;
-  color: white;
+  color: black;
   margin: -50px 0px 0px 250px;
   margin-left: 45%;
   transition: 0.5s;
@@ -527,9 +535,7 @@ shop- name
   font-size: 5px;
   margin: -20px 0px 0px 250px;
   margin-left: 70%;
-  border: solid black 1px;
   padding: 2px 5px;
-  background-color: transparent;
   color: black;
 }
 .men-link-div {
@@ -583,9 +589,7 @@ shop- name
 .women-page-btn {
   font-size: 5px;
   margin: -20px 0px 0px 75px;
-  border: solid black 1px;
   padding: 2px 5px;
-  background-color: transparent;
   color: black;
 }
 .kids-bg-clr {
@@ -626,9 +630,7 @@ shop- name
   font-size: 5px;
   margin: -20px 0px 0px 260px;
   margin-left: 70%;
-  border: solid black 1px;
   padding: 2px 5px;
-  background-color: transparent;
   color: black;
 }
 

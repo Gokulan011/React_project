@@ -7,7 +7,7 @@ export const CartProvider = ({ children }) => {
   // Load from localStorage
   const [cart, setCart] = useState(() => {
     const stored = localStorage.getItem("cart");
-    return stored ? JSON.parse(stored) : [];e
+    return stored ? JSON.parse(stored) : [];
   });
 
   // Save to localStorage whenever cart changes
@@ -34,6 +34,7 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (id) => {
     setCart(cart.filter(item => item.id !== id));
   };
+
   // INCREASE QTY
   const increaseQty = (id) => {
     setCart(cart.map(item =>
@@ -49,12 +50,12 @@ export const CartProvider = ({ children }) => {
         : item
     ));
   };
-  
-// CLEAR CART
- const clearCart = () => {
-  setCart([]); 
- };
 
+  // CLEAR CART
+  const clearCart = () => {
+    setCart([]);                  // clear cart state
+    localStorage.removeItem("cart"); // clear localStorage as well
+  };
 
   // COUNT
   const cartCount = cart.reduce((total, item) => total + item.qty, 0);
@@ -66,6 +67,7 @@ export const CartProvider = ({ children }) => {
       removeFromCart,
       increaseQty,
       decreaseQty,
+      clearCart,   // ✅ added clearCart here
       cartCount
     }}>
       {children}

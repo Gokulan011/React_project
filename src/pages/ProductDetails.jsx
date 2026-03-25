@@ -4,8 +4,10 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import StarRating from "../components/StarRating";
 import ProductCard from "../components/Productcard";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductDetails() {
+  const navigate = useNavigate(); 
   const { id } = useParams();
   const { cart, addToCart, increaseQty, decreaseQty } = useContext(CartContext);
 
@@ -52,7 +54,7 @@ export default function ProductDetails() {
           </div>
         )}
 
-        <button className="buy-now">Buy Now</button>
+        <button className="buy-now" onClick={() => navigate("/cart")} >Buy Now</button>
       </div>
 
       {/* RELATED PRODUCTS */}
