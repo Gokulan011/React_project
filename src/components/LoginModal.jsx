@@ -1,5 +1,6 @@
 import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
+import Swal from "sweetalert2";
 
 export default function LoginModal({ close }) {
 
@@ -25,7 +26,15 @@ export default function LoginModal({ close }) {
     const success = login(username, password);
 
     if (success) {
-      alert("Login successful");
+      Swal.fire({
+                 title: "Log in SuccessFully!",
+                 icon: "success",
+                 background: "#fff",
+                 color: "#1e1e1e",
+                 confirmButtonColor: "#4CAF50",
+                 confirmButtonText: "OK",
+                 width: window.innerWidth > 480 ? "40%" : "500px", // 80% width for mobile
+                 padding: "1.5rem",});
       close();
     }
   }

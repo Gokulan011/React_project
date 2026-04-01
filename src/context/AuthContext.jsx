@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import Swal from "sweetalert2";
 
 export const AuthContext = createContext();
 
@@ -11,7 +12,17 @@ export const AuthProvider = ({ children }) => {
   const register = (username, password) => {
     const newUser = { username, password };
     localStorage.setItem("registeredUser", JSON.stringify(newUser));
-    alert("Registration Successful! Please login.");
+    Swal.fire({
+      title: "Register SuccessFully! ",
+      text: "Please Login ",
+      icon: "success",
+      background: "#fff",
+      color: "#1e1e1e",
+      confirmButtonColor: "#4CAF50",
+      confirmButtonText: "OK",
+      width: window.innerWidth > 480 ? "40%" : "500px", // responsive width
+      padding: "1.5rem",
+    });
   };
 
   const login = (username, password) => {
@@ -32,7 +43,15 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem("user", JSON.stringify(loggedUser));
       return true;
     } else {
-      alert("Username or Password incorrect");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Username or Password is incorrect!",
+        footer: "Please check your credentials and try again",
+        confirmButtonText: "Retry",
+        confirmButtonColor: "#f44336",
+        width: window.innerWidth > 480 ? "40%" : "500px",
+      });;
       return false;
     }
   };
@@ -42,19 +61,38 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("user");
   };
 
-  // 🔴 Delete Account
+  //  Delete Account
   const deleteAccount = () => {
-
-    const confirmDelete = window.confirm(
-      "Are you sure you want to delete your account?"
-    );
-
-    if (confirmDelete) {
-      localStorage.removeItem("registeredUser");
-      localStorage.removeItem("user");
-      setUser(null);
-      alert("Account deleted successfully");
-    }
+    Swal.fire({
+      title: "Delete Account?",
+      text: "Are you sure you want to delete your account?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, delete account",
+      cancelButtonText: "Cancel",
+      background: "#fff",
+      color: "#1e1e1e",
+      confirmButtonColor: "#4CAF50",
+      cancelButtonColor: "#f44336",
+      width: window.innerWidth > 480 ? "40%" : "500px",
+      padding: "1.5rem",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem("registeredUser");
+        localStorage.removeItem("user");
+        setUser(null);
+        Swal.fire({
+          title: "Account Deleted SuccessFully!",
+          icon: "success",
+          background: "#fff",
+          color: "#1e1e1e",
+          confirmButtonColor: "#4CAF50",
+          confirmButtonText: "OK",
+          width: window.innerWidth > 480 ? "40%" : "500px", // responsive width
+          padding: "1.5rem",
+        });
+      }
+    });
   };
 
   return (
