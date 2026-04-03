@@ -129,7 +129,10 @@ ul li {
   color: black;
   font-weight: 200;
 }
-
+#brand-name{
+  text-decoration: none;
+  color: black;
+}
 /* @media (max-width: 600px) {
   .logo {
     align-items: center;

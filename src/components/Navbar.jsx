@@ -28,7 +28,7 @@ export default function Navbar() {
       <ul>
         <div style={{ margin: " 0px 0px 0px 30px" }}>
           <li><FontAwesomeIcon icon={faCrown} className="logo" /></li>
-          <li className="brand-name">GK </li></div>
+          <li className="brand-name"><Link to="/" className={location.pathname === "/" ? "active" : "" } id='brand-name'>GK</Link></li></div>
         <div className="nav1">
           <li ><Link to="/" className={location.pathname === "/" ? "active" : ""} id='nav-li'>Home</Link></li>
           <li ><Link to="/allproducts" className={location.pathname === "/allproducts" ? "active" : ""} id='nav-li'>All products</Link></li>
