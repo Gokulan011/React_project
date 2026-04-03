@@ -7,6 +7,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { CartContext } from "../context/CartContext";
 import { AuthContext } from "../context/AuthContext";
 import LoginModal from "./LoginModal";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { useDevice } from "../context/DeviceContext";
 
@@ -34,9 +35,9 @@ export default function Navbar() {
           <li><Link to={"/men"} className={location.pathname === "/men" ? "active" : ""} id='nav-li'>Men's</Link></li>
           <li ><Link to={"/women"} className={location.pathname === "/women" ? "active" : ""} id='nav-li'>Women's</Link></li>
           <li ><Link to={"/kids"} className={location.pathname === "/kids" ? "active" : ""} id='nav-li'>Kids</Link></li></div>
-        <div className="nav2">          <div className="nav-line">
-          <li>|</li>
-        </div>
+        <div className="nav2">
+          <div className="nav-line">|
+          </div>
           <li className="user-area">
             {!user ? (
               <button className="nav-li2" onClick={() => setShowLogin(true)}>
@@ -72,10 +73,26 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faCartShopping} />
               Cart ({cartCount})
             </Link>
-          </li></div>
+          </li>
+        </div>
+        <li><div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p><Link to="/" className={location.pathname === "/" ? "active" : ""} id='offcanvas-menu'>Home</Link></p>
+              <p><Link to="/allproducts" className={location.pathname === "/allproducts" ? "active" : ""} id='offcanvas-menu'>All products</Link></p>
+              <p><Link to={"/men"} className={location.pathname === "/men" ? "active" : ""} id='offcanvas-menu'>Men's</Link></p>
+              <p><Link to={"/women"} className={location.pathname === "/women" ? "active" : ""} id='offcanvas-menu'>Women's</Link></p>
+              <p><Link to={"/kids"} className={location.pathname === "/kids" ? "active" : ""} id='offcanvas-menu'>Kids</Link></p>
+            </div>
+          </div>
+
+            <div class="container-fluid mt-3">
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" id="offcanvas-btn">
+                <FontAwesomeIcon icon={faBars} /></button>
+            </div></li>
       </ul>
-      <h2>
-      </h2>
       {showLogin && <LoginModal close={() => setShowLogin(false)} />}
     </div>
 

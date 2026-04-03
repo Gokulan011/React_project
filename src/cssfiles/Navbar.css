@@ -87,6 +87,7 @@ ul li {
 .nav-line {
   color: rgb(0, 0, 0);
   margin: 0px 0px 0px 0px;
+  visibility: visible;
 }
 
 /* chatgpt */
@@ -112,6 +113,23 @@ ul li {
   opacity: 1;
   color: #0d6efd;
 }
+#offcanvas-btn{
+  background-color: transparent;
+  color: black;
+  border: none; 
+  margin-top: -70px;
+  visibility: hidden;
+}
+.offcanvas-body p{
+  text-align: center;
+  font-size: 20px;
+}
+#offcanvas-menu{
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
+}
+
 /* @media (max-width: 600px) {
   .logo {
     align-items: center;
@@ -242,12 +260,19 @@ ul li {
   .Name_banner {
     font-family: Lora;
     position: relative;
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 15px;
   }
-
+  .nav-bg {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  height: 60px;
+}
   .nav1 {
     display: flex;
     justify-content: left;
@@ -258,25 +283,34 @@ ul li {
   #nav-li {
     margin-left: 10px;
     font-size: 10px;
+    visibility: hidden;
   }
 
   .nav2 {
     display: flex;
-    margin: -19px 0px 0px 0px;
-    margin-left: 65%;
+    margin: -85px 0px 0px 0px;
+    margin-left: 35%;
     font-size: 10px;
+   text-align: center;
   }
 
   .nav-li2 {
-    margin: 3px 0px 0px 10px;
-    font-size: 8px;
+    margin:60px 0px 0px 30px;
+    font-size: 10px;
     padding: 0% 0%;
   }
 
   .nav-line {
     color: rgb(0, 0, 0);
     margin: 0px 0px 0px 0px;
+    visibility: hidden;
   }
-
+#offcanvas-btn{
+ margin-top: -70px;
+ margin-left: 92%;
+ position: relative;
+ z-index: 5;
+ visibility: visible;
+}
 } 
 
