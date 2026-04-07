@@ -29,10 +29,10 @@ export default function () {
               <button className='footer-submit'>Submit</button>
             </form>
             <ul className='icons-list'>
-              <li> <Link> <FontAwesomeIcon icon={faInstagram} className='footer-icons' /></Link></li>
-              <li> <Link> <FontAwesomeIcon icon={faFacebookF} className='footer-icons'/></Link></li>
-              <li> <Link> <FontAwesomeIcon icon={faYoutube} className='footer-icons' /></Link> </li>
-              <li> <Link> <FontAwesomeIcon icon={faXTwitter} className='footer-icons'/></Link></li>
+              <li> <a href="https://www.instagram.com/?hl=en"> <FontAwesomeIcon icon={faInstagram} className='footer-icons' /></a></li>
+              <li> <a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebookF} className='footer-icons'/></a></li>
+              <li> <a href="https://www.youtube.com/"><FontAwesomeIcon icon={faYoutube} className='footer-icons' /></a> </li>
+              <li> <a href="https://x.com/"><FontAwesomeIcon icon={faXTwitter} className='footer-icons'/></a></li>
             </ul>
             <div className='footer-mblno'>
             <p className='footer-mbl'>123-456-7890</p>
