@@ -23,7 +23,6 @@ import Register from './navpages/Register'
 import Women from './navpages/Women'
 import Kids from './navpages/kids'
 import Men from './navpages/Men'
-import PreviewWrapper from './components/PreviewWrapper'
 import Allproducts from './pages/Allproducts'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -33,7 +32,6 @@ function App() {
 
   return (
     <>
-     <PreviewWrapper>
       <Navbar/>
       <ScrollToTop/>
       <Routes>
@@ -45,8 +43,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetails />} />
-      </Routes>
-      </PreviewWrapper> 
+      </Routes> 
     </>
   )
 }

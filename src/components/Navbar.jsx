@@ -9,12 +9,10 @@ import { AuthContext } from "../context/AuthContext";
 import LoginModal from "./LoginModal";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { useDevice } from "../context/DeviceContext";
 
 
 export default function Navbar() {
 
-  const { device, setDevice } = useDevice();
 
   const { cartCount } = useContext(CartContext);
   const location = useLocation();
