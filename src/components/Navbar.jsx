@@ -38,13 +38,13 @@ export default function Navbar() {
           </div>
           <li className="user-area">
             {!user ? (
-              <button className="nav-li2" onClick={() => setShowLogin(true)}>
+              <button className="nav-li3" onClick={() => setShowLogin(true)}>
                 <FontAwesomeIcon icon={faCircleUser} /> Login
               </button>
             ) : (
               <div className="user-menu">
                 <span
-                  className="nav-li2"
+                  className="nav-li3"
                   onClick={(e) => {
                     e.stopPropagation();
                     setShowMenu(prev => !prev);
